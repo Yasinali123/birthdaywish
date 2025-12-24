@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PASSWORD SCREEN -->
+<div class="lock-screen" id="lockScreen">
+  <h1>🎁 Surprise Awaits</h1>
+  <p>Enter the secret password</p>
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="unlock()">Unlock</button>
+  <p id="error"></p>
+</div>
+
+<!-- CONFETTI CANVAS -->
+<canvas id="confetti"></canvas>
+
+<!-- MAIN CONTENT -->
+<div class="content hidden" id="content">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Happy Birthday</h1>
+    <h2>person name 💖</h2>
+    <p>This website is a small gift for  you jada accha se to nhi bn paya but i given my full efforts to make  .</p>
+    <button onclick="scrollDown()">Start the Journey</button>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <h3>Our Memories</h3>
+    <div class="grid">
+      <img src="photo1">
+      <img src="photo2">
+      <img src="photo3">
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video">
+    <h3>A Message for You</h3>
+    <video controls>
+      <source src="video" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- QUOTES -->
+  <section class="quotes">
+    <h3>Words From My Heart</h3>
+    <div class="quote-card" id="quote">
+      You are my best coincidence.
+    </div>
+  </section>
+
+  <footer>
+    Made only for you ❤️
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

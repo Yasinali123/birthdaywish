@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* LOCK SCREEN */
+.lock-screen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(145deg, #ff758c, #ff7eb3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  text-align: center;
+}
+
+.lock-screen input {
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  margin: 15px 0;
+  width: 70%;
+}
+
+.lock-screen button {
+  padding: 12px 35px;
+  border: none;
+  border-radius: 25px;
+  background: #fff;
+  color: #ff4b7d;
+  font-weight: 600;
+}
+
+/* MAIN CONTENT */
+.hidden {
+  display: none;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+}
+
+.hero h2 {
+  margin-top: 10px;
+  color: #ffb6c1;
+}
+
+.hero button {
+  margin-top: 30px;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background: #ff758c;
+  color: white;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 60px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* VIDEO */
+.video {
+  padding: 60px 20px;
+}
+
+video {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* QUOTES */
+.quotes {
+  padding: 60px 20px;
+}
+
+.quote-card {
+  background: rgba(255,255,255,0.15);
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
